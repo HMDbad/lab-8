@@ -14,6 +14,7 @@ services:
       - frontend
       - api
 
+  # access the frontend at localhost:3000 and query the api at localhost:5002
   frontend:
     build: 
       context: ./frontend
@@ -25,12 +26,13 @@ services:
     volumes:
       - ./frontend:/app
   
+  # access the api at localhost:5002 and query the database at localhost:5432
   api:
     build: 
       context: ./api
       dockerfile: Dockerfile
     ports:
-      - 5000:5000
+      - 5002:5002
     volumes:
       - ./api:/app
     depends_on:

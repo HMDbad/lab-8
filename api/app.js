@@ -28,7 +28,7 @@ app.get("/", (req, res) => {
 require("./routes/tasks.routes")(app);
 
 // set port, listen for requests
-const PORT = 5000;
+const PORT = 5002;
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}.`);
 });

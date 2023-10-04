@@ -4,7 +4,7 @@ const Op = db.Sequelize.Op;
 
 // Create and Save a new Task
 exports.create = (req, res) => {
-  
+    
 };
 
 // Retrieve all Tasks from the database.
